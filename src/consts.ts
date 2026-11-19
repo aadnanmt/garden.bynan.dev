@@ -3,8 +3,8 @@ import type { Site, Metadata, Social } from '@types'
 export const SITE: Site = {
   NAME: 'NaN',
   EMAIL: 'adnan@nanoolabs.dev',
-  URL: 'https://root.nanoolabs.dev',
-  REPO: 'https://github.com/aadnanmt/root.nanoolabs.dev',
+  URL: 'https://garden.bynan.dev',
+  REPO: 'https://github.com/aadnanmt/garden.bynan.dev',
   CDN: 'https://cdn.nanoolabs.dev',
   NUM_POSTS_ON_HOMEPAGE: 1,
   NUM_PROJECTS_ON_HOMEPAGE: 1,
@@ -17,7 +17,7 @@ export const LICENSE = {
 
 export const HOME: Metadata = {
   TITLE: 'Home',
-  DESCRIPTION: 'Adnan - Programmer && Sains Tech Enthusiast',
+  DESCRIPTION: 'Adnan | Programmer && Sains Tech Enthusiast',
 }
 
 export const BLOG: Metadata = {
