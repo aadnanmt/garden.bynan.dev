@@ -61,6 +61,12 @@ export const EXPLORE_PAGES: ExplorePage[] = [
     desc: 'My public keys for encryption and signing.',
     group: 'identity',
   },
+  {
+    name: 'About',
+    href: '/about',
+    desc: 'A simple overview.',
+    group: 'identity',
+  },
 ]
 
 export const MAIN_PAGES: ExplorePage[] = [

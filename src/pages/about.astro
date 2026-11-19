@@ -1,0 +1,32 @@
+---
+import PageLayout from '@layouts/PageLayout.astro'
+import Container from '@components/Container.astro'
+import BackToPrev from '@components/BackToPrev.astro'
+import PageTitle from '@components/PageTitle.astro'
+import PageIntro from '@components/PageIntro.astro'
+import { ABOUT } from '@consts'
+import { gitDate } from '@lib/utils'
+import FormattedDate from '@components/FormattedDate.astro'
+import { Content } from '@data/about.md'
+const lastUpdated = gitDate('src/data/about.md')
+---
+
+<PageLayout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
+  <Container>
+    <div class="space-y-10">
+      <BackToPrev href="/explore"> Back to explore </BackToPrev>
+      <PageTitle title={ABOUT.TITLE} />
+      <PageIntro intro={ABOUT.INTRO!} />
+      {
+        lastUpdated && (
+          <div class="text-mute-light dark:text-mute-dark text-sm italic">
+            Last updated: <FormattedDate date={lastUpdated} />
+          </div>
+        )
+      }
+      <article>
+        <Content />
+      </article>
+    </div>
+  </Container>
+</PageLayout>

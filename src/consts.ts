@@ -115,6 +115,12 @@ export const NOTES: Metadata = {
   ],
 }
 
+export const GUESTBOOK: Metadata = {
+  TITLE: 'Guestbook',
+  DESCRIPTION: 'Webmention from the indieweb.',
+  INTRO: ['Leave something behind.'],
+}
+
 export const NOW: Metadata = {
   TITLE: 'Now',
   DESCRIPTION: "What I'm focusing on at this exact moment.",
@@ -124,6 +130,12 @@ export const USES: Metadata = {
   TITLE: 'Uses',
   DESCRIPTION: 'My daily driver setup, software, and ecosystems.',
   INTRO: ['My daily driver setup: software, tools, and ecosystems I use every day.'],
+}
+
+export const ABOUT: Metadata = {
+  TITLE: 'About',
+  DESCRIPTION: 'My background, setup, and notes.',
+  INTRO: ['A simple overview.'],
 }
 
 export const SOCIALS: Social[] = [
