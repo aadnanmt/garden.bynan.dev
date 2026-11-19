@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro'
+import { SITE } from '@consts'
 
 // build time only
 // Astro calls GET at build,
@@ -8,7 +9,7 @@ import type { APIRoute } from 'astro'
 const robotsTxt = `
 User-agent: *
 Allow: /
-Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
+Sitemap: ${new URL('sitemap-index.xml', SITE.URL).href}
 `.trim()
 export const GET: APIRoute = () => {
   return new Response(robotsTxt, {
